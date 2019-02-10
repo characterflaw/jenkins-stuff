@@ -12,7 +12,7 @@ pipeline {
                 '''
                 sh '''
                     echo "Shat Android devices are connected"
-                    adb devices
+                    $ANDROID_HOME/platform-tools/adb devices
                 '''
             }
         }
