@@ -11,8 +11,8 @@ pipeline {
                     ls -lah
                 '''
                 sh '''
-                    echo "Shat Android devices are connected"
-                    $ANDROID_HOME/platform-tools/adb devices
+                    echo "What Android devices are connected?"
+                    /opt/Android/sdk/platform-tools/adb devices
                 '''
             }
         }
