@@ -10,6 +10,10 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
+                sh '''
+                    echo "Shat Android devices are connected"
+                    adb devices
+                '''
             }
         }
         stage('Test') {
